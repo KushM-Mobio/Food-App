@@ -1,11 +1,9 @@
 import expres from "express";
 import bodyParser from "body-parser";
 import mongoose, { ConnectOptions } from "mongoose";
-import dotenv from "dotenv";
 
-dotenv.config();
-const MONGO_URI = process.env.LOCAL_DB || "mongodb://localhost:27017/food-app";
-const PORT = process.env.PORT || 8000;
+// config
+import { MONGO_URI, PORT } from "./config";
 
 // roters
 import { AdminRoute, VendorRoute } from "./routes";
