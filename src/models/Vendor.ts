@@ -28,7 +28,7 @@ const VendorSchema = new Schema(
     password: { type: String, required: true },
     salt: { type: String, required: true },
     serviceAvailable: { type: Boolean },
-    rating: { type: Boolean },
+    rating: { type: Number },
     covorImage: { type: [String] },
     //   food: [
     //     {
